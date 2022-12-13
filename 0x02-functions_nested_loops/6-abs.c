@@ -2,7 +2,7 @@
 
 /**
  *  _abs - find absolute value of integer
- *  @a: the number
+ *  @t: the number
  *
  *  Return: absolute value
  */
