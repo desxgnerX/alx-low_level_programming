@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * print_times_table - Prints the n times table
@@ -9,13 +9,13 @@ include "main.h"
  */
 void print_times_table(int n)
 {
-int num, mult, prod;
+	int num, mult, prod;
 
-  if (n >= 0 && n <= 15)
-  {
-    for (num = 0; num <= n; num++)
-    {
-	    _putchar('0');
+	if (n >= 0 && n <= 15)
+		{
+			for (num = 0; num <= n; num++)
+			{
+				_putchar('0');
 
 			for (mult = 1; mult <= n; mult++)
 			{
