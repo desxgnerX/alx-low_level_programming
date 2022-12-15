@@ -8,16 +8,23 @@
 
 int main(void)
 {
-	unsigned long long n = 612852475143L;
-	unsigned long long i;
+	long int n;
+	long int div = 2, ans = 0, maxFact;
 
-	for (i = 2ULL; i < n; i++)
+	n = 612852475143;
+
+	while (n != 0)
 	{
-		while (n % i == 0)
+		if (n % div != 0)
+			div = div + 1;
+		else
 		{
-			n /= i;
+			maxFact = n;
+			n = n / div;
+			if (n == 1)
+				printf("%d is the largest prime factor !", maxFact);
+			break;
 		}
 	}
-	printf("%llu\n", n);
 	return (0);
 }
