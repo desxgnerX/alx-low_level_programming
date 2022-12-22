@@ -1,12 +1,12 @@
 #include "main.h"
 /**
  * *string_toupper - converts to uppercase
- * @a: the array.
+ * @s: the array.
  * Return: char
  */
 
 char *string_toupper(char *s)
-{	
+{
 	int count = 0;
 
 	while (*(s + count) != '\0')
