@@ -6,15 +6,14 @@
  */
 
 char *string_toupper(char *a)
-{
-	int count;
-	
-	for (i = 0; *(a + count)!='\0'; i++)
+{	
+	int count = 0;
+
+	while (*(s + count) != '\0')
 	{
-		if(*(a + count) >= 'a' && *(a + count) <= 'z')
-		{
-			*(a + count) = *(a + count) - 32;
-		}
+		if ((*(s + count) >= 97) && (*(s + count) <= 122))
+			*(s + count) = *(s + count) - 32;
+		count++;
 	}
-	return (a);
+	return (s);
 }
