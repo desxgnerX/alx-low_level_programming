@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * _isupper - check for the upper case characters.
  * @c: type int character
